@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bienvenido</title>
+    {% load static %}
+	<link rel="stylesheet" href="{% static 'core/css/estilos.css' %}">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="{% static 'core/js/header.js'%}"></script>
+	<script src="{% static 'core/js/carrusel.js'%} "></script>
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				BTS Company
+			</div>
+			<nav>
+				<a href="{% url 'home' %}">Inicio</a>
+				<a href="{% url 'servicios' %}">Servicios</a>
+				<a href="{% url 'comprar' %}">Comprar</a>
+				<a href="{% url 'contacto' %}">Contacto</a>
+			</nav>
+		</div>
+	</header>
+
+
+
+	<section class="contenido wrapper">
+		<div class="presentacion">
+
+            {% block contenido %}
+            
+            {% endblock contenido %}
+
+        </div>
+	</section>
+
+
+
+
+
+</body>
+<body>
+	 <footer>BTS TEAM</footer>
+ </body>
+</html>

@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+{% block contenido %}
+        <section class="form_wrap">
+				<section class="contact_info">
+					<section class="info_title">
+						<span class="fa fa-user-circle"></span>
+						<h2>Información<br>De Contacto</h2>
+					</section>
+					<section class="info_items">
+						<p><span class="fa fa-envelope"></span> jos.cornejof@alumnos.duoc.cl</p>
+						<p><span class="fa fa-mobile"></span> +56 9 6128 2386</p>
+					</section>
+				</section>
+				<form action="" class="form_contact">
+						<h2>Envía un mensaje</h2>
+						<div class="user_info">
+							<label for="names">Nombres *</label>
+							<input type="text" id="names">
+
+							<label for="phone">Teléfono / Celular *</label>
+							<input type="text" id="phone">
+
+							<label for="email">Correo Electrónico *</label>
+							<input type="text" id="email">
+
+							<label for="mensaje">Mensaje *</label>
+							<textarea id="mensaje"></textarea>
+
+							<input type="button" value="Enviar Mensaje" id="btnSend">
+						</div>
+				</form>
+    </section>
+{% endblock contenido %}
